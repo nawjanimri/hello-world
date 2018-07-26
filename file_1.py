@@ -1,2 +1,2 @@
 primera línea
-segunda línea
+segunda línea editada y ya guardada en el remoto
