@@ -2,4 +2,4 @@
 
 print("Editado desde el remote en GitHub")
 
-print("Y vuelvo a editar...")
+print("Mejor línea eliminada")
