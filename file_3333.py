@@ -6,4 +6,4 @@ print("Mejor línea eliminada")
 
 print("Y esta otra añadida")
 
-print("Ya estamos a viernes")
+print("Ya estamos a viernes, y repido la pregunta, ¿llego con fuerzas?")
