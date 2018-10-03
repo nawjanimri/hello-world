@@ -68,12 +68,25 @@
 
 	# Branches:
 	###########
+	> Flujo de trabajo con branches:
+		> Crear un branch cuando tengo que hacer una tarea o quiero experimentar algo.
+		> Trabajar sobre el branch (desarrollar, hacer pruebas).
+		> Nos aseguramos que la copia de trabajo está limpia (que no haya ningún cambio pendiente).
+		> Actualizamos nuestro branch de trabajo con los cambios que haya habido en master.
+		> Cuando estamos contentos con el trabajo hacemos un merge del trabajo en el branch master.
+
 	> git branch [-v] –a			# Listar branches / Averiguar branch actual.
 									# La referencia HEAD apunta al branch actual.
 	> git branch <nombre branch>	# Crea un branch a partir del branch actual.
 	> git checkout <nombre branch>	# Para pasar a trabajar a otro branch.
 	> git checkout –b <nombre branch> # Los dos a la vez. Crea el branch y pasa a trabajar
 									# a él.
+
+									#¿Cómo hacemos un merge cuando queremos integrar el 
+									# trabajo de un branch en el master?
+	> git checkout master			# Hacemos un checkout del branch donde vamos a integrar 
+									# los cambios.
+	> git merge <nombre branch>		# E integrammos los cambios.
 	
 	> git reset HEAD~1 				# deshace el último commit del branch actual, como si 
 									# no hubiera existido.
