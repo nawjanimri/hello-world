@@ -30,7 +30,8 @@
 
 	> git mv <origen> <destino>		# Renombar el archivo.
 	> mv <origen> <destino>;git rm <origen>; git add <destino> # Otra forma más larga de hacerlo.
-	# Git se da cuenta de que estamos renombrando el archivo debido a la firma del archivo.
+									# Git se da cuenta de que estamos renombrando el 
+									# archivo debido a la firma del archivo.
 
 	> git checkout -- <archivo>		# Deshacer los cambios en la copia de trabajo y volver 
 									# al archivo original desde la última instantánea.
@@ -39,10 +40,12 @@
 	###############
 	> git add <ruta archivo>		# Añade el archivo al Staging area.
 	> git add .  					# Añade todos los archivos nuevos o modificados.
-	# Ojo! si modificas el archivo añadido tendrás que volver a añadirlo.
+									# Ojo! si modificas el archivo añadido tendrás que 
+									# volver a añadirlo.
 	> git add -A  					# Añade todos los archivos modificados, nuevos o borrados.
 
-	# Eliminar un archivo del staging area sin perder las modificaciones:
+									# Eliminar un archivo del staging area sin perder 
+									# las modificaciones:
 	> git rm --cached <archivo> 	# ...Si el archivo es nuevo.
 	> git reset HEAD <archivo>		# ...Si el archivo está modificado.
 									# Útil por si no queremos hacer commit de este archivo.
@@ -60,18 +63,21 @@
 									# El HEAD~1 es el commit anterior al último commit de
 									# la rama.
 	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se ha eliminado).
-
+								
 
 	# Branches:
 	###########
 	> git branch [-v] –a			# Listar branches / Averiguar branch actual.
+									# La referencia HEAD apunta al branch actual.
 	> git branch <nombre branch>	# Crea un branch a partir del branch actual.
-	> git checkout <nombre branch>	# Pasar a trabajar a otro branch.
-	> git checkout –b <nombre branch> # Los dos a la vez.
+	> git checkout <nombre branch>	# Para pasar a trabajar a otro branch.
+	> git checkout –b <nombre branch> # Los dos a la vez. Crea el branch y pasa a trabajar
+									# a él.
 	
 	> git reset HEAD~1 				# deshace el último commit del branch actual.
 									# Como si no hubiera existido.
-	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se ha eliminado).
+	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se 
+									# ha eliminado).
 
 
 	# Remotes:
@@ -84,6 +90,26 @@
 	> git push [<remote>] [<nombre branch>] # Envío los cambios a un remoto.
 	> git push origin :<branch>		# Borro un branch remoto.
 	> git ls-remote <remote>		# Lista los branches que hay en un remote.
+
+
+	# Deshacer los cambios:
+	#######################
+	> git checkout -- <archivo>		# Deshacer los cambios en la copia de trabajo y volver 
+									# al archivo original desde la última instantánea.
+
+									# Eliminar un archivo del staging area sin perder 
+									# las modificaciones:
+	> git rm --cached <archivo> 	# ...Si el archivo es nuevo.
+	> git reset HEAD <archivo>		# ...Si el archivo está modificado.
+									# Útil por si no queremos hacer commit de este archivo.
+
+	> git reset HEAD~1 				# Deshace el último commit del branch actual, como si 
+									# no hubiera existido.
+									# El HEAD~1 es el commit anterior al último commit de
+									# la rama.
+	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se 
+									# ha eliminado).
+
 
 
 	# Referencias:
