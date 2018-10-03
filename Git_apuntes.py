@@ -59,7 +59,8 @@
 	> git log [-p ] [-2]			# Visualizar la historia de los commits.
 									# -p: Visualiza los cambios realizados (diff) en los commit.
 									# -2, ó -N: límite del número de commits a visualizar.		
-	> git reset HEAD~1 				# Deshace el último commit del branch actual.
+	> git reset HEAD~1 				# Deshace el último commit del branch actual, como si 
+									# no hubiera existido.
 									# El HEAD~1 es el commit anterior al último commit de
 									# la rama.
 	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se ha eliminado).
@@ -74,8 +75,10 @@
 	> git checkout –b <nombre branch> # Los dos a la vez. Crea el branch y pasa a trabajar
 									# a él.
 	
-	> git reset HEAD~1 				# deshace el último commit del branch actual.
-									# Como si no hubiera existido.
+	> git reset HEAD~1 				# deshace el último commit del branch actual, como si 
+									# no hubiera existido.
+									# El HEAD~1 es el commit anterior al último commit de
+									# la rama.
 	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se 
 									# ha eliminado).
 
