@@ -29,7 +29,8 @@
 	> rm <archivo>; git rm [-f] <archivo> # otra forma de eliminar el archivo.
 
 	> git mv <origen> <destino>		# Renombar el archivo.
-	> mv <origen> <destino>;git rm <origen>; git add <destino> # Otra forma más larga de hacerlo.
+	> mv <origen> <destino>;git rm <origen>; git add <destino> # Otra forma más larga 
+									# de hacerlo.
 									# Git se da cuenta de que estamos renombrando el 
 									# archivo debido a la firma del archivo.
 
@@ -111,8 +112,24 @@
 											# anteriores a la vez.
 
 	> git push [<remote>] [<nombre branch>] # Envío los cambios a un remoto.
-	> git push origin :<branch>		# Borro un branch remoto.
+	
+	> git remote 					# Muestra el nombre del remote que hay en mi repositorio local.
+	> git remote –v 				# Muestra la URL que se utilizo para crear el remote.
+
+	> git remote add <nombre> <URL> # Añade un remote a mi repositorio local. 
+
+
+	# Remotes y sus branches:
+	#########################
+
+	# Cuando se clona un repositorio remoto se crea una branch local asociado al branch del master
+		# E.g.: si el remote es "master" al clonarlo queda como "origin/master".				
+		# Estos branches se denominan tracking branches
+
 	> git ls-remote <remote>		# Lista los branches que hay en un remote.
+	> git checkout --track <remote>/<branch> # Para traerme un branch remoto.
+	> git checkout –b <branch> <remote>/<branch> # Para traerme un branch remoto.
+	> git push origin :<branch>		# Borro un branch remoto.
 
 
 	# Deshacer los cambios:
