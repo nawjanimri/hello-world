@@ -82,14 +82,21 @@
 	> git checkout –b <nombre branch> # Los dos a la vez. Crea el branch y pasa a trabajar
 									# a él.
 
-									#¿Cómo hacemos un merge cuando queremos integrar el 
-									# trabajo de un branch en el master?
+	> git branch -d <branch>		# Elimina un branch (si ya está integrado en el branch activo)
+
+	#¿Cómo hacemos un merge cuando queremos integrar el trabajo de un branch en el master?
 	> git checkout master			# Hacemos un checkout del branch donde vamos a integrar 
 									# los cambios.
 	> git merge <nombre branch>		# E integrammos los cambios.
+
+
+	# ¿Cómo averiguo que branches NO están integrados con el branch activo?
+	> git branch --no-merged		# Lista los que no están integrados.
+	> git branch --no-merged 		# Lista los que sí están integrados.
+
 	
-	> git reset HEAD~1 				# deshace el último commit del branch actual, como si 
-									# no hubiera existido.
+	# ¿Cómo deshago el último commit del branch actual?
+	> git reset HEAD~1 				# Como si no hubiera existido.
 									# El HEAD~1 es el commit anterior al último commit de
 									# la rama.
 	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se 
