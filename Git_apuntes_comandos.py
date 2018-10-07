@@ -57,6 +57,8 @@
 									# en cuenta:
 										# El estado de la última instantánea realizada.
 										# El contenido de la staging area.
+		Ej: git commit -m "initial commit of full repository"
+
 	> git log [-p ] [-2]			# Visualizar la historia de los commits.
 									# -p: Visualiza los cambios realizados (diff) en los commit.
 									# -2, ó -N: límite del número de commits a visualizar.		
@@ -106,12 +108,17 @@
 
 	# Remotes:
 	###########
+	> git remote add origin <bitbucket_URL> # Connect your new local Git repository 
+											# to the remote repository.
+		Ej: git remote add origin https://alvareztrabajo@bitbucket.org/alvareztrabajo/proyectos.git
+			
 	> git fetch <nombre remote>		# Traerse los cambios de un repositorio remoto.
 	> git merge <remote>/<nombre branch> # Aplico los cambios que hay en un remoto.
 	> git pull [<remote>] [<nombre branch>] # Traigo los cambios y los aplico. Las dos 
 											# anteriores a la vez.
 
 	> git push [<remote>] [<nombre branch>] # Envío los cambios a un remoto.
+		Ej: git push -u origin --all
 	
 	> git remote 					# Muestra el nombre del remote que hay en mi repositorio local.
 	> git remote –v 				# Muestra la URL que se utilizo para crear el remote.
@@ -149,63 +156,3 @@
 									# la rama.
 	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se 
 									# ha eliminado).
-
-
-
-	# Referencias:
-	##############
-	# URL: http://git-scm.com/
-	
-	> Información básica:
-		> Pro Git (Free book): 
-			# URL: https://git-scm.com/book/en/v2
-		> Manual de git:
-			# URL: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gittutorial.html
-		> Everyday Git with 20 commands or so:
-			# URL: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/giteveryday.html
-		> Git User Manual:
-			# URL: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html	
-		> Git core tutorial:
-			# URL: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitcore-tutorial.html
-		> Git Pocket Guide (Acceso con IP UCM):
-			# URL: https://proquest.safaribooksonline.com/book/databases/content-management-systems/9781449327507
-		> Version Control with Git, 2nd Edition (Acceso con IP UCM):
-			# URL: https://proquest.safaribooksonline.com/book/databases/content-management-systems/9781449345037
-	
-	> Páginas para aprender GIT:
-		# URL: http://speckyboy.com/2013/06/03/resources-for-learning-git/
-		# URL: http://www.gitguys.com/
-		# URL: http://teach.github.com/
-		# URL: http://gitimmersion.com/
-		# URL: http://sixrevisions.com/resources/git-tutorials-beginners/
-		# URL: http://www.webdesignerdepot.com/2009/03/intro-to-git-for-web-designers/
-
-	> Tips para GIT:
-		> git-for-beginners-the-definitive-practical-guide:
-			# URL: https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide
-		> Git Ready:
-			# URL: http://gitready.com/
-		> Opciones del comando git add:
-			# URL: http://aprendegit.com/opciones-del-comando-git-add/
-		> Forzar un merge commit:
-			# URL: http://aprendegit.com/forzando-merge-commits/
-		> Mantener carpetas vacías en el repositorio:
-			# URL: http://aprendegit.com/gitkeep-incluyendo-carpetas-en-los-repositorios/
-		> Xcode y Git:
-			# URL: http://aprendegit.com/category/xcode/
-		> Visual Git Reference (comandos intermedios):
-			# URL: http://marklodato.github.io/visual-git-guide/index-en.html
-		> 6 Motivos por los que Git no es un sistema de backups:
-			# URL: http://aprendegit.com/6-motivos-por-los-que-git-no-es-un-sistema-de-backup/
-		> Revisar cambios que se han añadido al index (staged):
-			# URL: https://stackoverflow.com/questions/1587846/how-do-i-show-the-changes-which-have-been-staged
-	
-	> Conceptos avanzados de GIT:
-		> http://softwareswirl.blogspot.de/:
-			# URL: http://softwareswirl.blogspot.de/
-		> Referencias, Github y pull requests:
-			# URL: http://aprendegit.com/uso-avanzado-de-referencias-github-y-pull-requests/
-		> Git alias: creación de comandos parametrizados:
-			# URL: http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
-		> Convertir repositorio SVN a GIT:
-			# URL: http://john.albin.net/git/convert-subversion-to-git
