@@ -67,7 +67,14 @@
 									# El HEAD~1 es el commit anterior al último commit de
 									# la rama.
 	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se ha eliminado).
-								
+	
+	> Recuperar una versión anterior de un archivo específico:
+		# Buscas el archivo en el listado de commits realizados, y recuperas ese archivo
+		# del commit previo que elijas.
+		> git log 					# Buscas en el listado de commits realizados
+		> git show <commitHash>:<path to file> # Mostrar cómo estaba el archivo en ese commit.
+		> git checkout <commitHash> -- <file1/to/restore> # Recuperar el archivo del commit que elijas
+					
 
 	# Branches:
 	###########
