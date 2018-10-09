@@ -11,7 +11,7 @@
 
 	# Información:
 	##############
-	> git status					# Cambios pendientes de commit.
+	> git status					# Informe de estado
 	> git diff						# Muestra los cambios de archivos modificados pero NO 
 									# añadidos al staging area.
 	> git diff --cached				# Muestra los cambios de archivos modificados que SI 
@@ -40,6 +40,8 @@
 	# Staging area:
 	###############
 	> git add <ruta archivo>		# Añade el archivo al Staging area.
+	> git add *   					# Incluye en Git todos los archivos o los añade al Staging area. 
+	> git add *.py  				# Incluye en Git los archivos *.py o los añade al Staging area.
 	> git add .  					# Añade todos los archivos nuevos o modificados.
 									# Ojo! si modificas el archivo añadido tendrás que 
 									# volver a añadirlo.
