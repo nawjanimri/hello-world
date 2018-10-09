@@ -138,7 +138,7 @@
 	> git push [<remote>] [<nombre branch>] # Envío los cambios a un remoto.
 		Ej: git push -u origin --all
 	
-	> git remote 					# Muestra el nombre del remote que hay en mi repositorio local.
+	> git remote 					# Muestra el nombre de los remotes que hay en mi repositorio local.
 	> git remote –v 				# Muestra la URL que se utilizo para crear el remote.
 
 	> git remote add <nombre> <URL> # Añade un remote a mi repositorio local. 

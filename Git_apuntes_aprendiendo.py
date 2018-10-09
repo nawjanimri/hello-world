@@ -69,6 +69,8 @@
             # URL: https://git-scm.com/docs/git-credential-store
         > Mostrar el contenido de una versión anterior de un archivo específico:        
             # URL: https://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file
+        > Mostrar las diferencias entre un repositorio local y uno remoto:
+            # URL: https://stackoverflow.com/questions/46786070/how-to-show-differences-between-local-and-remote-files-in-git
         > Recuperar una versión anterior de un archivo específico:
             # URL: https://stackoverflow.com/questions/215718/reset-or-revert-a-specific-file-to-a-specific-revision-using-git
         > http://softwareswirl.blogspot.de/:
