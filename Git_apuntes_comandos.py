@@ -17,6 +17,15 @@
 	> git diff --cached				# Muestra los cambios de archivos modificados que SI 
 									#están añadidos al staging area.
 
+	> ¿Cómo mostrar cambios entre repositorio local y remoto?:
+		# Me traigo el repositorio remoto pero sin "merge" con el local:
+		git fetch origin master
+		# Comparo ambos repositorios:
+		git diff <local-branch> <remote repo>/<remote branch>
+		Ej: git diff master origin/master
+		Ej: git diff master mi_remote_repo/master
+
+
 	# Ayuda:
 	########
 	> git help <comando>			# Ayuda sobre un comando.
