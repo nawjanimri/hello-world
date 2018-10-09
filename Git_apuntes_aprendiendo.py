@@ -66,6 +66,7 @@
 
         > Guardar credenciales de GitHub en local:
             # URL: https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git
+            # URL: https://git-scm.com/docs/git-credential-store
         > Mostrar el contenido de una versión anterior de un archivo específico:        
             # URL: https://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file
         > Recuperar una versión anterior de un archivo específico:
