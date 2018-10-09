@@ -134,11 +134,9 @@
 
 	> git remote add <nombre> <URL> # Añade un remote a mi repositorio local. 
 
-
 	# Remotes y sus branches:
 	#########################
-
-	# Cuando se clona un repositorio remoto se crea una branch local asociado al branch del master
+	> Cuando se clona un repositorio remoto se crea una branch local asociado al branch del master
 		# E.g.: si el remote es "master" al clonarlo queda como "origin/master".				
 		# Estos branches se denominan tracking branches
 
@@ -146,6 +144,23 @@
 	> git checkout --track <remote>/<branch> # Para traerme un branch remoto.
 	> git checkout –b <branch> <remote>/<branch> # Para traerme un branch remoto.
 	> git push origin :<branch>		# Borro un branch remoto.
+
+
+	# Guardar credenciales de un remote en local:
+	#############################################
+	> Cada vez que hacemos un Push tenemos que identificarnos en el remote, pero podemos
+ 	  guardar las credenciales en local:
+ 	  
+ 	  # Averiguamos la ruta completa del remote, incluyendo credenciales:
+ 	  	https://Username:Password@github.com/myRepoDir/myRepo.git
+ 	  	Ej:https://miusuario:mipass@github.com/miusuario/mirepo.git
+
+ 	  # Añadimos el remote indicando la ruta completa del mismo:
+ 	  	git remote add mirepo https://Username:Password@github.com/myRepoDir/myRepo.git
+
+ 	  # Y ya podemos utilizar este remote sin necesidad de identificarnos:
+ 	  	git push mirepo			 	
+ 	  	git push mirepo <branch> 	# Si quiero indicar en qué rama publico los cambios.
 
 
 	# Deshacer los cambios:
