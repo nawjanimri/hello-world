@@ -14,14 +14,18 @@
 	> git status					# Informe de estado
 	> git diff						# Muestra los cambios de archivos modificados pero NO 
 									# añadidos al staging area.
+									# Es decir, muestra los cambios entre los archivos del
+									# modificados y los del staging area.
 	> git diff --cached				# Muestra los cambios de archivos modificados que SI 
 									# están añadidos al staging area.
 									# Es decir, muestra los cambios entre los archivos del
 									# staging area y los del commit.
 
-	> ¿Cómo mostrar diferencias entre repositorio local y remoto?:
-		# Por repositorio local se entiende que son los archivos en el staging área o 
-		# en el commit, no los modificados.
+	> ¿Cómo mostrar diferencias entre repositorio local y un remote?:
+		# Por repositorio local se entiende que son los archivos en el commit, no los 
+		# modificados del staging área ni los modificados.
+		# Es decir, muestra los cambios entre los archivos del commit local y los del 
+		# remote.
 		# Me traigo el repositorio remoto pero sin "merge" con el local:
 		git fetch origin master
 		# Comparo ambos repositorios:
