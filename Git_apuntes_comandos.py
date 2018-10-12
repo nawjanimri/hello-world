@@ -172,6 +172,7 @@
 	> git remote –v 				# Muestra la URL que se utilizo para crear el remote.
 
 	> git remote add <nombre> <URL> # Añade un remote a mi repositorio local. 
+	> git remote rm <renote>		# Elimina un remote de mi repositorio local.
 
 
 	# Remotes y sus branches:
