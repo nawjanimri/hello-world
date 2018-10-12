@@ -1,7 +1,20 @@
 
 	# URL: https://informatica.ucm.es/data/cont/media/www/pag-66886/TallerGitGitHub.pdf
 	# URL: https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio
-	> Untracked > Unmodified > Modificado > Staged > Commited
+	
+	# Conceptos básicos:
+	####################
+	> Untracked > Unmodified > Modificado > Staged > Commited # Flujo de trabajo de un archivo.
+
+	> áreas de trabajo:
+		# Son áreas de trabajo que están en tu disco local.
+		- Working directory 				# Files in your working directory.
+		- Staging Area (aka cache, index) 	# A temp area that git add is placed into.
+		- HEAD 								# A reference to a specific commit (think of 
+											# it as a variable). Normally, it points to 
+											# the last commit in local repository. (that is, 
+											# after you did git commit).
+
 
 	# Inicio:
 	#########
@@ -11,15 +24,20 @@
 
 	# Información:
 	##############
-	> git status					# Informe de estado
-	> git diff						# Muestra los cambios de archivos modificados pero NO 
-									# añadidos al staging area.
-									# Es decir, muestra los cambios entre los archivos del
-									# modificados y los del staging area.
-	> git diff --cached				# Muestra los cambios de archivos modificados que SI 
-									# están añadidos al staging area.
-									# Es decir, muestra los cambios entre los archivos del
-									# staging area y los del commit.
+	> git status				# Informe de estado.ç
+	> git diff --color			# diff working dir, staging area.
+	> git diff --color filename # diff working dir, staging area, para 1 filename.
+	> git diff					# diff staging area, commit.
+	> git diff filename			# diff staging area, commit, para 1 filename.
+	> git diff --cached			# Muestra los cambios de archivos modificados que SI 
+								# están añadidos al staging area, y los del commit.
+	> git diff --staged 		# Muestra los cambios entre los archivos del HEAD y el 
+								# staging area. El "HEAD" es current branch, is a pointer 
+								# to the local branch you’re currently on, y normalmente
+								# estás en el branch "master". Por lo que en ocasiones
+								# este comando es equivalente a "git diff --cached"
+
+
 
 	> ¿Cómo mostrar diferencias entre repositorio local y un remote?:
 		# Por repositorio local se entiende que son los archivos en el commit, no los 
@@ -35,6 +53,8 @@
 
 		# Otra forma de hacerlo:
 		git fetch origin ; git diff --name-only master origin/master
+
+	> git show <commitHash>:<path to file> # Mostrar cómo estaba el archivo en ese commit.
 
 
 	# Ayuda:
