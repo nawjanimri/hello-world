@@ -24,18 +24,17 @@
 
 	# Información:
 	##############
-	> git status				# Informe de estado.ç
-	> git diff --color			# diff working dir, staging area.
-	> git diff --color filename # diff working dir, staging area, para 1 filename.
-	> git diff					# diff staging area, commit.
-	> git diff filename			# diff staging area, commit, para 1 filename.
-	> git diff --cached			# Muestra los cambios de archivos modificados que SI 
-								# están añadidos al staging area, y los del commit.
-	> git diff --staged 		# Muestra los cambios entre los archivos del HEAD y el 
-								# staging area. El "HEAD" es current branch, is a pointer 
-								# to the local branch you’re currently on, y normalmente
-								# estás en el branch "master". Por lo que en ocasiones
-								# este comando es equivalente a "git diff --cached"
+	> git status				# Informe de estado.
+	> git diff 					# Diff working dir, staging area.
+	> git diff --cached			# Diff staging area, last commit.
+	> git diff <commitID>		# Diff working dir, last commit. Get "commitID" con "git log".
+
+	> git status filename				# Informe de estado, para 1 filename.
+	> git diff filename 				# Diff working dir, staging area, para 1 filename.
+	> git diff --cached	filename		# Diff staging area, last commit, para 1 filename.
+	> git diff <commitID> filename		# Diff working dir, last commit. Get "commitID" 
+										# con "git log", para 1 filename.
+
 
 
 
