@@ -61,7 +61,15 @@
             # URL: http://aprendegit.com/6-motivos-por-los-que-git-no-es-un-sistema-de-backup/
         > Revisar cambios que se han añadido al index (staged):
             # URL: https://stackoverflow.com/questions/1587846/how-do-i-show-the-changes-which-have-been-staged
-    
+        > Si todo el local y el remoto están al día, pero git muestra el mensaje: 
+            # "Your branch is ahead of 'origin/master' by 6 commits. (use "git push" to publish 
+            #  your local commits)":"
+            # Una solución es:
+            > git fetch # Y desaparecerán los mensajes de error.
+            # URL: https://stackoverflow.com/questions/16288176/your-branch-is-ahead-of-origin-master-by-3-commits
+
+
+
     > Conceptos avanzados de GIT:
 
         > Guardar credenciales de GitHub en local:
