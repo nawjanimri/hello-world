@@ -2,6 +2,7 @@
 	# URL: https://informatica.ucm.es/data/cont/media/www/pag-66886/TallerGitGitHub.pdf
 	# URL: https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio
 	
+
 	# Conceptos básicos:
 	####################
 	> Untracked > Unmodified > Modificado > Staged > Commited # Flujo de trabajo de un archivo.
@@ -22,6 +23,12 @@
 	> git init <ruta proyecto>		# Crea repositorio en blanco.
 
 
+	# Ayuda:
+	########
+	> git help <comando>			# Ayuda sobre un comando.
+	> git help config				# Ayuda para ver qué opciones hay de configuración.
+
+
 	# Información:
 	##############
 	> git status				# Informe de estado.
@@ -34,9 +41,6 @@
 	> git diff --cached	filename		# Diff staging area, last commit, para 1 filename.
 	> git diff <commitID> filename		# Diff working dir, last commit. Get "commitID" 
 										# con "git log", para 1 filename.
-
-
-
 
 	> ¿Cómo mostrar diferencias entre repositorio local y un remote?:
 		# Por repositorio local se entiende que son los archivos en el commit, no los 
@@ -56,12 +60,6 @@
 	> git show <commitHash>:<path to file> # Mostrar cómo estaba el archivo en ese commit.
 
 
-	# Ayuda:
-	########
-	> git help <comando>			# Ayuda sobre un comando.
-	> git help config				# Ayuda para ver qué opciones hay de configuración.
-
-
 	# Copia de trabajo:
 	###################
 	> git rm <archivo>				# Elimina el archivo (opción recomendada).
@@ -75,6 +73,7 @@
 
 	> git checkout -- <archivo>		# Deshacer los cambios en la copia de trabajo y volver 
 									# al archivo original desde la última instantánea.
+
 
 	# Staging area:
 	###############
@@ -91,6 +90,7 @@
 	> git rm --cached <archivo> 	# ...Si el archivo es nuevo.
 	> git reset HEAD <archivo>		# ...Si el archivo está modificado.
 									# Útil por si no queremos hacer commit de este archivo.
+
 
 	# Commits:
 	##########
@@ -173,6 +173,7 @@
 
 	> git remote add <nombre> <URL> # Añade un remote a mi repositorio local. 
 
+
 	# Remotes y sus branches:
 	#########################
 	> Cuando se clona un repositorio remoto se crea una branch local asociado al branch del master
@@ -183,23 +184,6 @@
 	> git checkout --track <remote>/<branch> # Para traerme un branch remoto.
 	> git checkout –b <branch> <remote>/<branch> # Para traerme un branch remoto.
 	> git push origin :<branch>		# Borro un branch remoto.
-
-
-	# Guardar credenciales de un remote en local:
-	#############################################
-	> Cada vez que hacemos un Push tenemos que identificarnos en el remote, pero podemos
- 	  guardar las credenciales en local:
- 	  
- 	  # Averiguamos la ruta completa del remote, incluyendo credenciales:
- 	  	https://Username:Password@github.com/myRepoDir/myRepo.git
- 	  	Ej:https://miusuario:mipass@github.com/miusuario/mirepo.git
-
- 	  # Añadimos el remote indicando la ruta completa del mismo:
- 	  	git remote add mirepo https://Username:Password@github.com/myRepoDir/myRepo.git
-
- 	  # Y ya podemos utilizar este remote sin necesidad de identificarnos:
- 	  	git push mirepo			 	
- 	  	git push mirepo <branch> 	# Si quiero indicar en qué rama publico los cambios.
 
 
 	# Deshacer los cambios:
@@ -219,3 +203,23 @@
 									# la rama.
 	> git revert <sha1 commit>		# Deshacer un commit (dejando constancia que se 
 									# ha eliminado).
+
+
+	# Guardar credenciales de un remote en local:
+	#############################################
+	> Cada vez que hacemos un Push tenemos que identificarnos en el remote, pero podemos
+ 	  guardar las credenciales en local:
+ 	  
+ 	  # Averiguamos la ruta completa del remote, incluyendo credenciales:
+ 	  	https://Username:Password@github.com/myRepoDir/myRepo.git
+ 	  	Ej:https://miusuario:mipass@github.com/miusuario/mirepo.git
+
+ 	  # Añadimos el remote indicando la ruta completa del mismo:
+ 	  	git remote add mirepo https://Username:Password@github.com/myRepoDir/myRepo.git
+
+ 	  # Y ya podemos utilizar este remote sin necesidad de identificarnos:
+ 	  	git push mirepo			 	
+ 	  	git push mirepo <branch> 	# Si quiero indicar en qué rama publico los cambios.
+
+
+
