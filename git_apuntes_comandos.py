@@ -163,8 +163,10 @@
     > git merge <remote>/<nombre branch> # Aplico los cambios que hay en un remoto.
     > git pull [<remote>] [<nombre branch>] # Traigo los cambios y los aplico. Las dos 
                                             # anteriores a la vez.
+        Ej: git pull miremoto master
 
     > git push [<remote>] [<nombre branch>] # Envío los cambios a un remoto.
+        Ej: git push miremoto master
         Ej: git push -u origin --all
     
     > git remote                    # Muestra el nombre de los remotes que hay en mi repositorio local.
