@@ -2,8 +2,7 @@
     # URL: https://informatica.ucm.es/data/cont/media/www/pag-66886/TallerGitGitHub.pdf
     # URL: https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio
     
-
-    # Conceptos básicos:
+   # Conceptos básicos:
     ####################
     > Untracked > Unmodified > Modificado > Staged > Commited # Flujo de trabajo de un archivo.
 
