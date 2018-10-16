@@ -102,10 +102,12 @@
     > git log [-p ] [-2]            # Visualizar la historia de los commits.
                                     # -p: Visualiza los cambios realizados (diff) en los commit.
                                     # -2, ó -N: límite del número de commits a visualizar.      
+    
     > git reset HEAD~1              # Deshace el último commit del branch actual, como si 
                                     # no hubiera existido.
                                     # El HEAD~1 es el commit anterior al último commit de
                                     # la rama.
+    
     > git revert <sha1 commit>      # Deshacer un commit (dejando constancia que se ha eliminado).
     
     > Recuperar una versión anterior de un archivo específico:
@@ -142,8 +144,7 @@
 
     # ¿Cómo averiguo que branches NO están integrados con el branch activo?
     > git branch --no-merged        # Lista los que no están integrados.
-    > git branch --no-merged        # Lista los que sí están integrados.
-
+    > git branch --merged           # Lista los que sí están integrados.
     
     # ¿Cómo deshago el último commit del branch actual?
     > git reset HEAD~1              # Como si no hubiera existido.
@@ -151,7 +152,6 @@
                                     # la rama.
     > git revert <sha1 commit>      # Deshacer un commit (dejando constancia que se 
                                     # ha eliminado).
-
 
     # Remotes:
     ###########
